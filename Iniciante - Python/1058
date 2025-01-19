@@ -1,0 +1,29 @@
+testes = int(input())
+
+def repeti(repeticao):
+    repeti = 0
+    while repeticao > repeti:
+        x , y = map(int, input() .split())
+        
+        if x % 2 != 0:
+            parar = 0
+            calculo = 0
+            while parar != y:
+                parar += 1
+                calculo += x
+                x += 2
+
+            print(calculo)
+        else:
+            x += 1
+            parar = 0
+            calculo = 0
+            while parar != y:
+                parar += 1
+                calculo += x
+                x += 2
+            print(calculo)
+
+        repeti += 1
+
+repeti(testes)
